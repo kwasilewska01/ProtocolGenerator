@@ -1,5 +1,22 @@
-
+.nav {
+    background-color: #f0f0f0;
+    width: 6rem;
+}
 
 a.nav-link {
-    min-height:4rem;
+    height:6rem;
+    font-size: .8rem;
+    width:100%;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0!important;
+}
+
+a {
+    color: #939393!important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #f7f7f7!important;
 }
