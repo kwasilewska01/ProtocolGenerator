@@ -1,23 +1,48 @@
 import React, { Component } from 'react';
 import './Collapse.scss';
 import Squere from './Squere';
+import apps from '../../images/icons/apps.svg';
+import people from '../../images/icons/people_alt.svg';
+import business from '../../images/icons/business.svg';
+import chrome from '../../images/icons/chrome_reader_mode.svg';
+import insert from '../../images/icons/insert_chart_outlined.svg';
+
 
 export default class Collapse extends Component {
     render(){
     return (
-        <div class="row">
-            <div class="col-1">
-                <div class="nav nav-pills" role="tablist" aria-orientation="vertical">
+        <div className="row">
+            <div className="col-padding-15">
+                <div className="nav nav-pills" role="tablist" aria-orientation="vertical">
                     <Squere 
-                        tabText="Josi"
-                        />
-                    {/* <a className="nav-link" data-toggle="pill" href="#v-pills-home" role="tab" aria-selected="false">Dashbord</a>
-                    
-                    <a className="nav-link" data-toggle="pill" href="#v-pills-profile" role="tab" aria-selected="false">Osoby</a>
-                    <a className="nav-link" data-toggle="pill" href="#v-pills-messages" role="tab" aria-selected="false">Firmy</a>
-                    <a className="nav-link" data-toggle="pill" href="#v-pills-settings" role="tab" aria-selected="false">Konrakty</a>
-                    <a className="nav-link" data-toggle="pill" href="#v-pills-settings" role="tab" aria-selected="false">Raporty</a>
-                    <a className="nav-link"  data-toggle="pill" href="#v-pills-settings" role="tab" aria-selected="false">Ustawienia</a> */}
+                        tabText="MAIN"
+                    />
+                    <Squere 
+                        tabText="Dashbord"
+                        tabIcon={apps}
+                        alt="apps"
+                    />
+                    <Squere 
+                        tabText="Osoby"
+                        tabIcon={people}
+                        alt="people"
+                    />
+                    <Squere 
+                        tabText="Firmy"
+                        tabIcon={business}
+                        alt="business"
+                        
+                    />
+                    <Squere 
+                        tabText="Umowy"
+                        tabIcon={chrome}
+                        alt="chrome"
+                    />
+                     <Squere 
+                        tabText="Raporty"
+                        tabIcon={insert}
+                        alt="insert"
+                    />                   
                 </div>
             </div>
         </div>
