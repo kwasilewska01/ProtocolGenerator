@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.scss';
-import Collapse from './components/ui/Collapse';
-import Navbar from './components/ui/Navbar'
+
+import Navbar from './components/ui/Navbar';
+import GridDash from './container/GridDash/GridDash.jsx';
 
 function App() {
   return (
     <React.Fragment>
       <Navbar />
-      <Collapse />
+      <GridDash />
     </React.Fragment>
   );
 }

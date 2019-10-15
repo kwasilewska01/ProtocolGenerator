@@ -11,7 +11,7 @@ import insert from '../../images/icons/insert_chart_outlined.svg';
 export default class Collapse extends Component {
     render(){
     return (
-        <div className="row">
+        // <div className="row">
             <div className="col-padding-15">
                 <div className="nav nav-pills" role="tablist" aria-orientation="vertical">
                     <Squere 
@@ -45,7 +45,7 @@ export default class Collapse extends Component {
                     />                   
                 </div>
             </div>
-        </div>
+        // </div>
     );
     }
 }
