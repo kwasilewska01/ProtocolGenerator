@@ -21,6 +21,8 @@ export default class PeopleList extends Component {
                     <li className="list-group-item">Morbi leo risus  awe aw   aw wd w   wwd  </li>
                     <li className="list-group-item">Porta ac consectetur ac wa d  wad d w dwad d</li>
                     <li className="list-group-item">Vestibulum at eros  thh t h t htrr   rt   tr</li>
+                    <li className="list-group-item">  thh t h t htrr Vestibulum at eros  rt   tr</li>
+                    <li className="list-group-item">Vestibulum at eros  thh t h t htrr Vestibulum at eros  rt   tr</li>
                 </ul>
             </div>
         </div>

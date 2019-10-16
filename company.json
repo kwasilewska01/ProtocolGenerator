@@ -1,0 +1,22 @@
+{
+  "company": [
+    {
+      "id": 1,
+      "name": "Soflab",
+      "address": "Warszawa, ulica śmaka 33",
+      "contractNumber": "TUNZ/166/32"
+    },
+    {
+      "id": 1,
+      "name": "Ciciorap",
+      "address": "Warszawa, ulica śmaka 33",
+      "contractNumber": "TUNZ/166/32"
+    },
+    {
+      "id": 1,
+      "name": "Dupołap",
+      "address": "Warszawa, ulica śmaka 33",
+      "contractNumber": "TUNZ/166/32"
+    }
+  ]
+}
