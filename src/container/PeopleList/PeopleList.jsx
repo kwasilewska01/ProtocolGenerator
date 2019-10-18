@@ -4,7 +4,32 @@ import security from '../../images/icons/security.svg'
 
 
 export default class PeopleList extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: undefined,
+        }
+    }
+
+    componentDidMount() {
+        fetch("http://localhost:3001/company")
+        .then( res => res.json())
+        .then(result => {
+            this.setState({
+                data: result,
+            })
+        })
+    }
+
     render(){
+
+        console.log(this.state.data);
+        if (!this.state.data) {
+            return (
+                <div>Loading...</div>
+            )
+        }
+
     return (
 
         <div className="content">
@@ -16,13 +41,10 @@ export default class PeopleList extends Component {
                     
             <div className="row">
                 <ul className="list-group list-group-flush">
-                    <li className="list-group-item">Cras justo odio  qw ewe  wdaed wa</li>
-                    <li className="list-group-item">Dapibus ac facilisis in  a ww   aw edaw wa  awed aw</li>
-                    <li className="list-group-item">Morbi leo risus  awe aw   aw wd w   wwd  </li>
-                    <li className="list-group-item">Porta ac consectetur ac wa d  wad d w dwad d</li>
-                    <li className="list-group-item">Vestibulum at eros  thh t h t htrr   rt   tr</li>
-                    <li className="list-group-item">  thh t h t htrr Vestibulum at eros  rt   tr</li>
-                    <li className="list-group-item">Vestibulum at eros  thh t h t htrr Vestibulum at eros  rt   tr</li>
+                    {this.state.data.map( (item) => (
+                        <li key={item.name} className="list-group-item">{item.name}</li>
+                    ))} 
+                    
                 </ul>
             </div>
         </div>

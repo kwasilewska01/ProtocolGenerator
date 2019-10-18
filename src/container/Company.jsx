@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class company extends React.Component {
+export default class company extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,7 +11,7 @@ export default class company extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3000/company")
+    fetch("http://localhost:3001/company")
       .then(res => res.json())
       .then(
         (result) => {
