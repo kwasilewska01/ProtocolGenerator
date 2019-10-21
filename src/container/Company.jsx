@@ -50,3 +50,4 @@ export default class company extends Component {
       );
     }
   }
+}

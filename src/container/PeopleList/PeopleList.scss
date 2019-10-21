@@ -26,4 +26,30 @@ ul li.list-group-item {
     padding-left:0;
 }
 
-    
+// .filtr_icon-list {
+
+// }
+
+.list-group-menu {
+    display: -webkit-inline-box!important;
+}
+
+.list-group-flush:first-child .list-group-item:first-child {
+    border-top: 1px solid rgba(0,0,0,.125)!important;
+}
+
+li.list-group-item div:nth-child(1),div:nth-child(2)  {
+    padding-left:0!important;
+}
+
+.color-grey {
+    filter: invert(64%) sepia(1%) saturate(12%) hue-rotate(314deg) brightness(92%) contrast(84%);
+}
+
+.color-red {
+    filter: invert(23%) sepia(50%) saturate(4636%) hue-rotate(350deg) brightness(99%) contrast(98%);
+}
+
+.cursor {
+    cursor: pointer;
+}

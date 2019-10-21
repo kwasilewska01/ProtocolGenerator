@@ -9,14 +9,20 @@
     {
       "id": 2,
       "name": "Ciciorap",
-      "address": "Warszawa, ulica śmaka 33",
-      "contractNumber": "TUNZ/166/32"
+      "address": "Warszawa, ulica Robaka 88",
+      "contractNumber": "PTE/77/88"
     },
     {
       "id": 3,
       "name": "Dupołap",
-      "address": "Warszawa, ulica śmaka 33",
-      "contractNumber": "TUNZ/166/32"
+      "address": "Warszawa, ulica buraka 90",
+      "contractNumber": "UF/66/31"
+    },
+    {
+      "id": 4,
+      "name": "Dyrdymał",
+      "address": "Warszawa, ulica bidaka 21",
+      "contractNumber": "TU/16/117"
     }
   ]
 }
